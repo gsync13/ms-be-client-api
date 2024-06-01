@@ -1,5 +1,6 @@
 package com.clientapi.enums;
 
+
 public enum ClientStatus {
 
     ACTIVE("A", "Active"),
@@ -13,5 +14,11 @@ public enum ClientStatus {
         this.description = description;
     }
 
+    public String getCode() {
+        return code;
+    }
 
+    public String getDescription() {
+        return description;
+    }
 }

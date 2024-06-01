@@ -2,7 +2,11 @@ package com.clientapi.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -12,6 +16,9 @@ import java.time.LocalDate;
 
 @MappedSuperclass
 @Data
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Audit {
 
     @CreatedDate
